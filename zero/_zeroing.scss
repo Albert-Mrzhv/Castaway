@@ -1,0 +1,221 @@
+@media (max-width: 1057px) {
+    .main {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .episodes__block {
+        flex-direction: column;
+    }
+    .episodes__blocks-jacob-wrapper-info {
+        margin-right: 200px;
+    }
+    .episodes__block-info-name {
+        margin: 20px 0 20px 0;
+    }
+    .episodes__block-info-tips {
+        margin: 20px 0 20px 0;
+    }
+    .episodes__blocks-jacob-wrapper {
+        flex-direction: column;
+    }
+    .episodes__blocks-wrapper {
+        flex-direction: column;
+    }
+    .episodes__blocks-jacob-wrapper-info {
+        margin: 0 0 20px 0;
+    }
+    .episodes__blocks-jacob {
+        padding: 0 0 100px 0;
+    }
+    .episodes__blocks-wrapper {
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    .episodes__blocks-blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer {
+        .wrapper {
+            padding: 100px 30px 100px 80px;
+        }
+    }
+}
+
+
+@media (max-width: 765px) {
+    .header {
+        padding: 8px 20px 0px 20px;
+        &__title {
+            font-size: 25px;
+        }
+        &__nav {
+            display: none;
+        }
+    }
+    
+    .elem {
+        display: block;
+    }
+    .main__img {
+        margin: 0 auto;
+    }
+    .main__image {
+        width: 450px;
+    }
+    .episodes__title-btn {
+        flex-direction: column;
+    }
+    .episodes__btn {
+        margin: 0 0 20px 0;
+    }
+    .episodes__blocks-jacob {
+        padding: 0;
+    }
+    .episodes__blocks-jacob-wrapper-info {
+        margin-bottom: 30px;
+    }
+    .episodes__blocks-jacob-wrapper-photo {
+        width: 450px;
+    }
+    .episodes__blocks-jacob-wrapper-info-arrow {
+        text-align: center;
+    }
+    .episodes__blocks-jacob-wrapper-info-name {
+        font-size: 50px;
+        text-align: center;
+    }
+    .episodes__blocks-jacob-wrapper-info-text {
+        font-size: 12px;
+    }
+    .episodes__blocks-jacob-wrapper-info-acquaintance {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .episodes__blocks-email-title {
+        .title {
+            font-size: 50px;
+        }
+    }
+    .episodes__blocks-email-title {
+        height: 165px;
+    }
+    .episodes__blocks-wrapper {
+        padding: 30px 60px 30px 60px;
+    }
+    .episodes__blocks-forms {
+        .form-text {
+            width: 292px;
+            height: 60px;
+        }
+    }
+    .episodes__blocks-blocks {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        .wrapper {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 554px) {
+    .main__image {
+        width: 300px;
+    }
+    .main__info-title {
+        font-size: 50px;
+    }
+    .episodes__title {
+        font-size: 45px;
+    }
+    .episodes__block-info-title {
+        font-size: 40px;
+    }
+    .episodes__block-info-button {
+        font-size: 17px;
+    }
+    .episodes__block-info-btn {
+        width: 180px;
+        font-size: 12px;
+    }
+    .episodes__blocks-jacob-wrapper-photo {
+        width: 300px;
+    }
+    .episodes__blocks-jacob-wrapper-info-name {
+        font-size: 40px;
+    }
+    .episodes__blocks-email-title {
+        .title {
+            font-size: 40px;
+        }
+    }
+    .episodes__blocks-forms {
+        .form-text {
+            width: 252px;
+            height: 40px;
+        }
+    }
+    .episodes__blocks-title {
+        font-size: 12px;
+    }
+    .episodes__blocks-name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 415px) {
+    .main__image {
+        width: 100%;
+        object-fit: cover;
+    }
+    .main__info-title {
+        font-size: 32px;
+    }
+    .episodes__title {
+        font-size: 30px;
+    }
+    .episodes__block-info-title {
+        font-size: 30px;
+    }
+    .episodes__block-info-button {
+        font-size: 11px;
+    }
+    .episodes__block-info-btn {
+        width: 140px;
+        font-size: 9px;
+    }
+    .episodes__blocks-jacob-wrapper-photo {
+        width: 100%;
+        object-fit: cover;
+    }
+    .episodes__blocks-jacob-wrapper-info-name {
+        font-size: 30px;
+    }
+    .episodes__blocks-email-title {
+        height: 156px;
+        .title {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    }
+    .episodes__blocks-forms {
+        .form-text {
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .button {
+            width: 72px;
+            height: 30px;
+        }
+        ::placeholder {
+            font-size: 22px;
+        }
+    }
+    .footer .wrapper {
+        padding: 10px 30px 30px 60px;
+    }
+    .episodes__blocks-block {
+        height: 220px;
+    }
+}

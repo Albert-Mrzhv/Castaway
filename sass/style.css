@@ -1,0 +1,513 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px 30px 70px;
+}
+.header__title {
+  font-size: 30px;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav p {
+  margin-right: 25px;
+}
+.header__nav p:last-child {
+  margin-right: 0;
+}
+
+.elem {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+
+.check {
+  display: none;
+}
+
+.nav-cros {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  translate: 100% 0;
+  transition: all 0.3s;
+  background-color: black;
+}
+
+.check:checked + .nav-cros {
+  translate: 0;
+  visibility: visible;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cross {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  padding: 30px;
+}
+.main__img {
+  margin-right: 70px;
+  padding: 0 30px;
+}
+.main__image {
+  border-radius: 14px;
+}
+.main__info-title {
+  max-width: 530px;
+  font-size: 70px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.main__info-socials img {
+  margin-right: 15px;
+}
+
+.episodes {
+  padding: 30px;
+}
+.episodes__blocks {
+  margin: 0 0 35px 0;
+}
+.episodes__blocks-three {
+  margin: 0 0 200px 0;
+}
+.episodes__title-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.episodes__title {
+  font-size: 64px;
+  margin-bottom: 50px;
+}
+.episodes__btn {
+  width: 178px;
+  height: 51px;
+  background-color: #118DA8;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 27px;
+}
+.episodes__block {
+  display: flex;
+  background: #000;
+  padding: 30px;
+  border-radius: 32px;
+}
+.episodes__block-img {
+  margin-right: 50px;
+}
+.episodes__block-info-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: sans-serif;
+  background-color: #191919;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+.episodes__block-info-count {
+  color: #118DA8;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.episodes__block-info-title {
+  max-width: 701px;
+  font-size: 64px;
+  font-weight: 400;
+  font-size: sans-serif;
+}
+.episodes__block-info-button {
+  max-width: 757px;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 33px;
+  color: #e1d3d3;
+}
+.episodes__block-info-btn {
+  width: 208px;
+  height: 51px;
+  background-color: #118DA8;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400px;
+  font-family: sans-serif;
+  line-height: 27px;
+}
+.episodes__block-info-tips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: sans-serif;
+  background-color: #191919;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+.episodes__blocks-jacob {
+  padding: 100px 0 100px 0;
+}
+.episodes__blocks-jacob-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.episodes__blocks-jacob-wrapper-info {
+  margin-right: 30px;
+}
+.episodes__blocks-jacob-wrapper-info-arrow {
+  margin: 0 0 20px 0;
+}
+.episodes__blocks-jacob-wrapper-info-acquaintance {
+  font-size: 18px;
+  font-weight: 400;
+  color: #118DA8;
+}
+.episodes__blocks-jacob-wrapper-info-name {
+  font-size: 65px;
+  font-weight: 400;
+  margin: 0 0 28px 0;
+}
+.episodes__blocks-jacob-wrapper-info-text {
+  margin: 0 0 30px 0;
+  color: #e1d3d3;
+}
+.episodes__blocks-jacob-wrapper-info-text:last-child {
+  margin: 0;
+}
+.episodes .episodes__blocks-subscribe {
+  padding: 0 0 100px 0;
+}
+.episodes__blocks-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 60px 0 60px;
+  background-color: #000;
+  border-radius: 32px;
+}
+.episodes__blocks-email-title {
+  max-width: 400px;
+  height: 330px;
+}
+.episodes__blocks-email-title .email {
+  font-size: 18px;
+  font-weight: 400;
+  color: #118DA8;
+}
+.episodes__blocks-email-title .title {
+  font-size: 72px;
+  font-weight: 400;
+  margin: 0;
+}
+.episodes__blocks-forms {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.episodes__blocks-forms .form-text {
+  width: 522px;
+  height: 82px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0;
+  background-color: #191919;
+  padding: 0 0 0 21px;
+  outline: none;
+}
+.episodes__blocks-forms ::placeholder {
+  font-size: 24px;
+  font-weight: 400;
+}
+.episodes__blocks-forms .button {
+  width: 87px;
+  height: 48px;
+  background-color: #118DA8;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.episodes__blocks-forms .button:hover {
+  background-color: #09a2c4;
+}
+.episodes__blocks-forms .button:active {
+  background-color: #fff;
+  color: #000;
+}
+.episodes__blocks-wrapper {
+  padding-right: 30px;
+}
+.episodes .episodes__blocks-grids {
+  display: flex;
+  justify-content: center;
+}
+.episodes__blocks-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+.episodes__blocks-block {
+  max-width: 423px;
+  height: 321px;
+  padding: 54px 63px 51px 52px;
+  background-color: #000000;
+  border-radius: 32px;
+  color: #e1d3d3;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 200px 100px 80px;
+}
+
+@media (max-width: 1057px) {
+  .main {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .episodes__block {
+    flex-direction: column;
+  }
+  .episodes__blocks-jacob-wrapper-info {
+    margin-right: 200px;
+  }
+  .episodes__block-info-name {
+    margin: 20px 0 20px 0;
+  }
+  .episodes__block-info-tips {
+    margin: 20px 0 20px 0;
+  }
+  .episodes__blocks-jacob-wrapper {
+    flex-direction: column;
+  }
+  .episodes__blocks-wrapper {
+    flex-direction: column;
+  }
+  .episodes__blocks-jacob-wrapper-info {
+    margin: 0 0 20px 0;
+  }
+  .episodes__blocks-jacob {
+    padding: 0 0 100px 0;
+  }
+  .episodes__blocks-wrapper {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+  .episodes__blocks-blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .wrapper {
+    padding: 100px 30px 100px 80px;
+  }
+}
+@media (max-width: 765px) {
+  .header {
+    padding: 8px 20px 0px 20px;
+  }
+  .header__title {
+    font-size: 25px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .elem {
+    display: block;
+  }
+  .main__img {
+    margin: 0 auto;
+  }
+  .main__image {
+    width: 450px;
+  }
+  .episodes__title-btn {
+    flex-direction: column;
+  }
+  .episodes__btn {
+    margin: 0 0 20px 0;
+  }
+  .episodes__blocks-jacob {
+    padding: 0;
+  }
+  .episodes__blocks-jacob-wrapper-info {
+    margin-bottom: 30px;
+  }
+  .episodes__blocks-jacob-wrapper-photo {
+    width: 450px;
+  }
+  .episodes__blocks-jacob-wrapper-info-arrow {
+    text-align: center;
+  }
+  .episodes__blocks-jacob-wrapper-info-name {
+    font-size: 50px;
+    text-align: center;
+  }
+  .episodes__blocks-jacob-wrapper-info-text {
+    font-size: 12px;
+  }
+  .episodes__blocks-jacob-wrapper-info-acquaintance {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .episodes__blocks-email-title .title {
+    font-size: 50px;
+  }
+  .episodes__blocks-email-title {
+    height: 165px;
+  }
+  .episodes__blocks-wrapper {
+    padding: 30px 60px 30px 60px;
+  }
+  .episodes__blocks-forms .form-text {
+    width: 292px;
+    height: 60px;
+  }
+  .episodes__blocks-blocks {
+    grid-template-columns: 1fr;
+  }
+  .footer .wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 554px) {
+  .main__image {
+    width: 300px;
+  }
+  .main__info-title {
+    font-size: 50px;
+  }
+  .episodes__title {
+    font-size: 45px;
+  }
+  .episodes__block-info-title {
+    font-size: 40px;
+  }
+  .episodes__block-info-button {
+    font-size: 17px;
+  }
+  .episodes__block-info-btn {
+    width: 180px;
+    font-size: 12px;
+  }
+  .episodes__blocks-jacob-wrapper-photo {
+    width: 300px;
+  }
+  .episodes__blocks-jacob-wrapper-info-name {
+    font-size: 40px;
+  }
+  .episodes__blocks-email-title .title {
+    font-size: 40px;
+  }
+  .episodes__blocks-forms .form-text {
+    width: 252px;
+    height: 40px;
+  }
+  .episodes__blocks-title {
+    font-size: 12px;
+  }
+  .episodes__blocks-name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 415px) {
+  .main__image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .main__info-title {
+    font-size: 32px;
+  }
+  .episodes__title {
+    font-size: 30px;
+  }
+  .episodes__block-info-title {
+    font-size: 30px;
+  }
+  .episodes__block-info-button {
+    font-size: 11px;
+  }
+  .episodes__block-info-btn {
+    width: 140px;
+    font-size: 9px;
+  }
+  .episodes__blocks-jacob-wrapper-photo {
+    width: 100%;
+    object-fit: cover;
+  }
+  .episodes__blocks-jacob-wrapper-info-name {
+    font-size: 30px;
+  }
+  .episodes__blocks-email-title {
+    height: 156px;
+  }
+  .episodes__blocks-email-title .title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .episodes__blocks-forms .form-text {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .episodes__blocks-forms .button {
+    width: 72px;
+    height: 30px;
+  }
+  .episodes__blocks-forms ::placeholder {
+    font-size: 22px;
+  }
+  .footer .wrapper {
+    padding: 10px 30px 30px 60px;
+  }
+  .episodes__blocks-block {
+    height: 220px;
+  }
+}/*# sourceMappingURL=style.css.map */
